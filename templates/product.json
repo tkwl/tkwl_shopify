@@ -11,7 +11,9 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -21,7 +23,9 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -30,7 +34,9 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -39,7 +45,9 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -82,6 +90,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "debutify-reviews-star-ratings-app-section": {
+          "type": "shopify:\/\/apps\/debutify-reviews\/blocks\/debutify-reviews_product-badge\/df08bded-40dd-47c1-88ee-4648245a6441",
+          "settings": {
+            "class_wrapper": "product__text"
+          }
         }
       },
       "block_order": [
@@ -89,6 +103,7 @@
         "title",
         "caption",
         "price",
+        "debutify-reviews-star-ratings-app-section",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -181,9 +196,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -203,12 +218,31 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "debutify-reviews-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "debutify-reviews-product-reviews": {
+          "type": "shopify:\/\/apps\/debutify-reviews\/blocks\/debutify-reviews_product-reviews\/df08bded-40dd-47c1-88ee-4648245a6441",
+          "settings": {
+            "class_wrapper": "",
+            "collection_identifier": ""
+          }
+        }
+      },
+      "block_order": [
+        "debutify-reviews-product-reviews"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "debutify-reviews-product-reviews-app-section"
   ]
 }
