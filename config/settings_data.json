@@ -213,7 +213,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "16138933890102356706": {
+        "type": "shopify:\/\/apps\/omega-multiple-tiktok-pixels\/blocks\/app-embed-block\/0500769c-ab04-46c4-8ebe-26a3fb9f10cb",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
